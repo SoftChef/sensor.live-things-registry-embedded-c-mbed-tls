@@ -27,10 +27,12 @@
 #include "mbedtls/error.h"
 
 #define CERTS_PATH              "./"
-#define ISSUER_CRT              "./mbedtls-2.12.0/rootCA.pem"
+
 #define REQ_FILE                "./deviceCert.csr"
 #define SUBJECT_KEY             "./keyfile.key"
-#define ISSUER_KEY              "./mbedtls-2.12.0/rootCA.key"
+#define ISSUER_CRT              "./ca.cert.pem"
+#define ISSUER_KEY              "./ca.private_key.pem"
+
 #define DFL_ISSUER_NAME         "CN=CA,O=mbed TLS,C=UK"
 #define DFL_SER_NUMBER          "1"
 #define DFL_NOT_BEFORE          "20180101000000"
